@@ -1,0 +1,26 @@
+.banner {
+    position: absolute;
+    display: flex;
+    background-color: lightblue;
+    height: inherit;
+    width: inherit;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    height: 100%;
+}
+
+.title {
+    position: relative;
+    top: 10%;
+}
+
+.clock {
+    position: relative;
+    font-size: large;
+    top: 30%;
+    padding-right: 10px;
+}
