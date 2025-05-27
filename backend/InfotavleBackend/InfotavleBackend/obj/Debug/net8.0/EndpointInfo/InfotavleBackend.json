@@ -177,13 +177,17 @@
             "format": "date-time"
           },
           "theMessage": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
           },
           "slideID": {
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "slides": {
+            "$ref": "#/components/schemas/Slides"
           }
         },
         "additionalProperties": false
@@ -200,8 +204,9 @@
             "format": "int32"
           },
           "componentName": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
           },
           "expirationDate": {
             "type": "string",

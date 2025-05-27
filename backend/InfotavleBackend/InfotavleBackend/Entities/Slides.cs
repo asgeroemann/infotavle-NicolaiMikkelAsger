@@ -1,12 +1,19 @@
-﻿namespace InfotavleBackend.Entities
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace InfotavleBackend.Entities
 {
     public class Slides
     {
-        [System.ComponentModel.DataAnnotations.Key]
-        public global::System.Int32 slidesID { get; set; }
+        [Key]
+        public int slidesID { get; set; }
 
-        public required string componentName { get; set; }
+        [Required, MaxLength(100)]
+        public string componentName { get; set; }
+
         public DateTime? expirationDate { get; set; }
-        public required bool isActive { get; set; }
+
+        [Required, Column("isActive", TypeName="bit")]
+        public bool isActive { get; set; }
     }
 }
