@@ -1,8 +1,28 @@
 [
   {
+    "ContainingType": "InfotavleBackend.Controllers.EventsController",
+    "Method": "Get",
+    "RelativePath": "api/events",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[InfotavleBackend.Entities.CalendarEvents, InfotavleBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "InfotavleBackend.Controllers.SlidesController",
-    "Method": "GetActive",
-    "RelativePath": "active",
+    "Method": "Get",
+    "RelativePath": "api/slides",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -21,8 +41,8 @@
   },
   {
     "ContainingType": "InfotavleBackend.Controllers.SlidesController",
-    "Method": "Get",
-    "RelativePath": "api/slides",
+    "Method": "GetActive",
+    "RelativePath": "api/slides/active",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

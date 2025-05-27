@@ -21,7 +21,7 @@ namespace InfotavleBackend.Controllers
             return await theDBContext.slides.ToListAsync();
         }
         
-        [HttpGet("/active")]
+        [HttpGet("active")]
         public async Task<List<Slides>> GetActive()
         {
             return await theDBContext.slides.Where(x => x.isActive == true).ToListAsync();

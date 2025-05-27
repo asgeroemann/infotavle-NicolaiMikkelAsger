@@ -1,0 +1,24 @@
+﻿using InfotavleBackend.Entities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace InfotavleBackend.Controllers
+{
+    [Route("api/events")]
+    [ApiController]
+    public class EventsController: ControllerBase
+    {
+        private readonly AppDBContext theDBContext;
+
+        public EventsController(AppDBContext theDBContext)
+        {
+            this.theDBContext = theDBContext;
+        }
+
+        [HttpGet]
+        public async Task<List<CalendarEvents>> Get()
+        {
+            return await theDBContext.calendarEvents.ToListAsync();
+        }
+    }
+}
