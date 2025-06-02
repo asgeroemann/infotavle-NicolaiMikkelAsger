@@ -7,3 +7,9 @@ app-calendar {
     height: 95%;
     width: 20%;
 }
+
+.slide {
+    height: 95%;
+    width: 80%;
+    background-color: red;
+}

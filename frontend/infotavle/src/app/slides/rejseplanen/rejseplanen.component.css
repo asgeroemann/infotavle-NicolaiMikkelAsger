@@ -1,0 +1,7 @@
+.slide {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    height: inherit;
+    width: inherit;
+}

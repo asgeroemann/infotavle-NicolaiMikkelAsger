@@ -4,12 +4,13 @@ import { BannerComponent } from "./banner/banner.component";
 import { CalendarComponent } from "./calendar/calendar.component";
 import myLocaleDa from '@angular/common/locales/da';
 import { registerLocaleData } from '@angular/common';
+import { RejseplanenComponent } from "./slides/rejseplanen/rejseplanen.component";
 
 registerLocaleData(myLocaleDa);
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BannerComponent, CalendarComponent],
+  imports: [RouterOutlet, BannerComponent, CalendarComponent, RejseplanenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [
