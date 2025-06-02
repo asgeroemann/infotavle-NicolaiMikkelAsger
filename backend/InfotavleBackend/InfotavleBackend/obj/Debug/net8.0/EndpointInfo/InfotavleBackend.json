@@ -186,7 +186,7 @@
             "format": "int32",
             "nullable": true
           },
-          "slides": {
+          "theSlides": {
             "$ref": "#/components/schemas/Slides"
           }
         },

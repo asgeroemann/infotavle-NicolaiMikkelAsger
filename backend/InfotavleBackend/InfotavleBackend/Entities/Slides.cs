@@ -6,6 +6,7 @@ namespace InfotavleBackend.Entities
     public class Slides
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int slidesID { get; set; }
 
         [Required, MaxLength(100)]

@@ -15,5 +15,6 @@ namespace InfotavleBackend
 
         public DbSet<Slides> slides { get; set; }
         public DbSet<CalendarEvents> calendarEvents { get; set; }
+        public DbSet<TheComments> comments { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace InfotavleBackend.Controllers
             this.theDBContext = theDBContext;
         }
 
+        // Get all records from this table in the DB.
         [HttpGet]
         public async Task<List<CalendarEvents>> Get()
         {

@@ -14,9 +14,9 @@ namespace InfotavleBackend.Entities
         [Required, MaxLength(100)]
         public string theMessage { get; set; }
 
-        //[ForeignKey("Slides")]
+        [ForeignKey("theSlides")]
         public int? slideID { get; set; }
         
-        //public virtual Slides Slides { get; set; }
+        public Slides theSlides { get; set; }
     }
 }

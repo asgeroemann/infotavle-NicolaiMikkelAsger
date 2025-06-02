@@ -159,7 +159,6 @@ H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBa
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\staticwebassets.build.json.cache
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\staticwebassets.development.json
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\Infotavl.1F3A425C.Up2Date
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\InfotavleBackend.dll
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\refint\InfotavleBackend.dll
