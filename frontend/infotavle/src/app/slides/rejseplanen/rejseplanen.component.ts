@@ -21,10 +21,8 @@ export class RejseplanenComponent implements OnInit {
       next:response=>{
         let d = response as Departures;
         this.departures = d.Departure;
-        //console.log(response);
       },
       error:error=>console.error('Could not fetch data:', error),
     });
-    console.log(this.departures);
   }
 }
