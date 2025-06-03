@@ -1,9 +1,10 @@
 <div class="slide">
     <h1>Bus afgange</h1>
     <div class="departures-container">
-        <app-departure 
-        *ngFor="let departure of departures"
-        [departure]="departure"></app-departure>
+        <div *ngFor="let departure of departures">
+            <app-departure *ngIf="departure.reachable===true"
+            [departure]="departure"></app-departure>
+        </div>
     </div>
 </div>
 
