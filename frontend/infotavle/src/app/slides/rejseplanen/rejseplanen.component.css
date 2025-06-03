@@ -5,12 +5,16 @@
     height: inherit;
     width: inherit;
     background: #e6534e;
-background: linear-gradient(90deg, rgba(230, 83, 78, 1) 0%,  rgba(204, 29, 31, 1) 0%, rgba(247, 188, 199, 1) 100%);
+    background: linear-gradient(90deg, rgba(230, 83, 78, 1) 0%,  rgba(204, 29, 31, 1) 0%, rgba(247, 188, 199, 1) 100%);
+    text-align: center;
+    padding-top: 20px;
 }
 
 .departures-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 950px;
+    width: 65%;
+    margin: 50px auto;
+    overflow: hidden;
 }

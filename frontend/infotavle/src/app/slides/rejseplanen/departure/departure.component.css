@@ -1,7 +1,6 @@
 .departure-div {
-    height: 150px;
-    width: 300px;
-    border: 1px solid black;
+    height: 8vw;
+    width: 16vw;
     margin-bottom: 20px;
     margin-right: 15px;
     text-align: center;
@@ -12,17 +11,17 @@
 }
 
 .stop {
-    font-size: 22px;
+    font-size: 1.2vw;
 }
 
 .time {
-    font-size: 40px;
+    font-size: 2vw;
 }
 
 .destination {
-    font-size: 22px;
+    font-size: 1.2vw;
 }
 
 .name {
-    font-size: 22px;
+    font-size: 1.2vw;
 }
