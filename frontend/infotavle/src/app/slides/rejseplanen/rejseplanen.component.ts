@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RejseplanenService } from '../../rejseplanen.service';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
-import { Departures } from '../../departures';
-import { Departure } from '../../departure';
+import { Departures } from '../../interfaces/departures';
+import { Departure } from '../../interfaces/departure';
 
 @Component({
   selector: 'app-rejseplanen',

@@ -1,6 +1,6 @@
-import { JourneyDetailRef } from "./journey-detail-ref";
-import { Notes } from "./notes";
-import { Product } from "./product";
+import { JourneyDetailRef } from "../journey-detail-ref";
+import { Notes } from "../notes";
+import { Product } from "../product";
 
 
 export interface Departure {
