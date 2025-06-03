@@ -1,7 +1,8 @@
 .banner {
     position: absolute;
     display: flex;
-    background-color: lightblue;
+    background: #e6534e;
+background: linear-gradient(90deg, rgba(230, 83, 78, 1) 0%, rgba(67, 94, 230, 1) 0%, rgba(92, 250, 245, 1) 100%);
     height: inherit;
     width: inherit;
     justify-content: space-between;

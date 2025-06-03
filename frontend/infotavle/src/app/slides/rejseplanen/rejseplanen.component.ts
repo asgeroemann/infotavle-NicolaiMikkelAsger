@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { Departures } from '../../interfaces/departures';
 import { Departure } from '../../interfaces/departure';
+import { DepartureComponent } from './departure/departure.component';
 
 @Component({
   selector: 'app-rejseplanen',
-  imports: [CommonModule],
+  imports: [CommonModule, DepartureComponent],
   templateUrl: './rejseplanen.component.html',
   styleUrl: './rejseplanen.component.css'
 })

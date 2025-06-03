@@ -1,8 +1,8 @@
 <div class="slide">
-    <ul>
-        <li *ngFor="let departure of departures">
-            {{departure.stop}}. {{departure.time}}
-        </li>
-    </ul>
+    <div class="departures-container">
+        <app-departure 
+        *ngFor="let departure of departures"
+        [departure]="departure"></app-departure>
+    </div>
 </div>
 

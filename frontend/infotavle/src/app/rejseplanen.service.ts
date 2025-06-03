@@ -19,7 +19,9 @@ export class RejseplanenService {
   constructor() { }
 
   getDepartures() : Observable<Departures> {
-    this.url = `http://${this.baseUrl}/nearbyDepartureBoard?accessId=${this.key}&${this.lon}&${this.lat}&format=json`;
+    let duration = 'duration=30';
+    let maxJourneys = "maxJourneys=10";
+    this.url = `http://${this.baseUrl}/nearbyDepartureBoard?accessId=${this.key}&${this.lon}&${this.lat}&${duration}&${maxJourneys}&format=json`;
     return this.http.get<Departures>(this.url);
   }
 
