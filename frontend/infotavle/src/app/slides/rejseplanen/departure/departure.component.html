@@ -2,5 +2,6 @@
     <p class="stop">{{departure.stop}}</p>
     <p class="name">{{departure.name}}</p>
     <p class="destination">{{departure.direction}}</p>
-    <p class="time">{{departure.time.substring(0,5)}}</p>
+    <p class="time" *ngIf="departure.rtTime != null; else elseBlock">{{departure.rtTime.substring(0,5)}}</p>
+    <ng-template #elseBlock><p class=time>{{departure.time.substring(0,5)}}</p></ng-template>
 </div>
