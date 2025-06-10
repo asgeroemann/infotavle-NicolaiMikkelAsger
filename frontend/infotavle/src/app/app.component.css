@@ -1,14 +1,17 @@
 app-banner {
-    height: 5%;
-    width: 100%;
+    height: 5vh;
+    width: 100vw;
 }
 
 app-calendar {
-    height: 95%;
-    width: 20%;
+    height: 95vh;
+    width: 20vw;
 }
 
 .slide {
-    height: 95%;
-    width: 80%;
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+    height: 95vh;
+    width: 80vw;
 }

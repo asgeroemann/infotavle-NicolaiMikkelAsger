@@ -1,8 +1,5 @@
 .slide {
-    position: absolute;
-    left: 20%;
-    top: 5%;
-    height: inherit;
+    height: 100%;
     width: inherit;
     background: #e6534e;
     background: linear-gradient(90deg, rgba(230, 83, 78, 1) 0%,  rgba(204, 29, 31, 1) 0%, rgba(247, 188, 199, 1) 100%);

@@ -1,0 +1,51 @@
+.slide {
+    height: 100%;
+    width: inherit;
+    
+}
+
+.col-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: inherit;
+
+}
+
+.col {
+    width: 7.69%;
+    height: 100%;
+}
+
+.gainsboro {
+    background-color: gainsboro;
+}
+
+.deepskyblue {
+    background-color: deepskyblue;
+}
+
+.header {
+    height: 15%;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header p {
+    margin: auto;
+}
+
+.body {
+    font-size: 0.7vw;
+    margin: 5px;
+    hyphens: auto;
+    word-break: break-word;
+    hyphenate-limit-chars: 8 6 2;
+}
+
+.body div {
+
+}
