@@ -18,6 +18,7 @@ export class RejseplanenComponent implements OnInit {
   constructor(private rejseplanenService: RejseplanenService) {}
 
   ngOnInit(): void {
+    // get the list of departires from the service
     this.rejseplanenService.getDepartures().subscribe( {
       next:response=>{
         let d = response as Departures;

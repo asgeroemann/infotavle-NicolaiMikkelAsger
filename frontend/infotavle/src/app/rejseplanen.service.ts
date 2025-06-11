@@ -18,6 +18,7 @@ export class RejseplanenService {
 
   constructor() { }
 
+  //pulls departures from the rejseplanen api and forwards the data
   getDepartures() : Observable<Departures> {
     let duration = 'duration=40';
     let maxJourneys = "maxJourneys=10";

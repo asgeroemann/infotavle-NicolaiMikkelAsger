@@ -14,6 +14,7 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // get the next 14 dates and append them if they are not weekends, to get the next 10 weekdays
     for (var i = 0; i < 14; i++) {
       var date = new Date();
       date.setDate(date.getDate() + i);
@@ -24,6 +25,7 @@ export class CalendarComponent implements OnInit {
     }
   }
 
+  //filter out weekends from the result above
   weekendFilter(date : Date) {
     return date.getDay() !== 0 && date.getDay() !== 6;
   }
