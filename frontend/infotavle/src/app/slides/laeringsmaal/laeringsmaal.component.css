@@ -39,6 +39,7 @@
 }
 
 .body {
+    height: 85%;
     font-size: 0.7vw;
     margin: 5px;
     hyphens: auto;
@@ -47,5 +48,6 @@
 }
 
 .body div {
-
+    margin: 0.8vh 0;
 }
+
