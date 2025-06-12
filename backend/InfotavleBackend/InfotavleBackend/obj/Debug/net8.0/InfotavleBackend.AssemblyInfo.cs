@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41b4e3c57c64c9f87a645898fa1fe2f76f78ae70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af1ba00e1e86f0ce7b176aa8c66c6334ada51b47")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\entities\\thecomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\entities\\thecomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\entities\\calendarevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\entities\\slides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\entities\\thecomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\entities\\thecomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|h:\\p2\\informationstavle\\codespace\\infotavle\\backend\\infotavlebackend\\infotavlebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55605D10-664F-42CC-A950-38DC3BB839DC}|InfotavleBackend\\InfotavleBackend.csproj|solutionrelative:infotavlebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +50,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Controllers\\CommentsController.cs",
               "ToolTip": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Controllers\\CommentsController.cs",
               "RelativeToolTip": "InfotavleBackend\\Controllers\\CommentsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCMAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:07:46.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T09:07:46.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "EventsController.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Controllers\\EventsController.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Controllers\\EventsController.cs",
@@ -75,12 +74,11 @@
               "RelativeToolTip": "InfotavleBackend\\Controllers\\EventsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:08:02.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T07:08:02.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SlidesController.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Controllers\\SlidesController.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Controllers\\SlidesController.cs",
@@ -93,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "TheComments.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Entities\\TheComments.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Entities\\TheComments.cs",
@@ -101,12 +99,11 @@
               "RelativeToolTip": "InfotavleBackend\\Entities\\TheComments.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T09:02:34.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T09:02:34.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Slides.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Entities\\Slides.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Entities\\Slides.cs",
@@ -114,12 +111,11 @@
               "RelativeToolTip": "InfotavleBackend\\Entities\\Slides.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T10:14:22.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T10:14:22.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CalendarEvents.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Entities\\CalendarEvents.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Entities\\CalendarEvents.cs",
@@ -127,18 +123,17 @@
               "RelativeToolTip": "InfotavleBackend\\Entities\\CalendarEvents.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:59:23.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T06:59:23.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Program.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\Program.cs",
               "ToolTip": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Program.cs",
               "RelativeToolTip": "InfotavleBackend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T08:53:21.698Z",
               "EditorCaption": ""
@@ -153,12 +148,11 @@
               "RelativeToolTip": "InfotavleBackend\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-26T08:36:28.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T08:36:28.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\AppDBContext.cs",
               "RelativeDocumentMoniker": "InfotavleBackend\\AppDBContext.cs",
@@ -171,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "InfotavleBackend\\Properties\\launchSettings.json",
@@ -179,8 +173,7 @@
               "RelativeToolTip": "InfotavleBackend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-26T07:27:06.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T07:27:06.821Z"
             }
           ]
         }

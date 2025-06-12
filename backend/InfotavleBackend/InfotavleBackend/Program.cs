@@ -28,6 +28,14 @@ namespace InfotavleBackend
                 app.UseSwaggerUI();
             }
 
+            // ---***--- Dissabels all security ---***---
+            app.UseCors(options =>
+            {
+                options.AllowAnyHeader();
+                options.AllowAnyOrigin();
+                options.AllowAnyMethod();
+            });
+
             app.UseAuthorization();
 
 

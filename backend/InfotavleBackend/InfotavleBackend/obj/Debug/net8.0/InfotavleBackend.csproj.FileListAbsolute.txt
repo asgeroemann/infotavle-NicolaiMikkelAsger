@@ -165,3 +165,8 @@ H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBa
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\InfotavleBackend.pdb
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\InfotavleBackend.genruntimeconfig.cache
 H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\ref\InfotavleBackend.dll
+H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+H:\P2\Informationstavle\Codespace\infotavle\backend\InfotavleBackend\InfotavleBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
