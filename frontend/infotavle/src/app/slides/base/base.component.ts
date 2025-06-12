@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { RejseplanenComponent } from '../rejseplanen/rejseplanen.component';
 import { LaeringsmaalComponent } from "../laeringsmaal/laeringsmaal.component";
+import { WeatherComponent } from '../weather/weather.component';
 import { SlidesService } from '../../slides.service';
 import {DynamicHooksComponent} from 'ngx-dynamic-hooks';
 
@@ -16,11 +17,12 @@ export class BaseComponent implements OnInit {
   len : number = 0; //keeps track of the length of the slide array
   fallback : string = "<app-rejseplanen></app-rejseplanen>"; // fallback if we don't get an array of slides
   activeSlide : string = "<app-rejseplanen></app-rejseplanen>"; // the current slide to be shown
-  parsers = [
+  parsers = [ // tells the dynamic hook which component could possibly be rendered
     RejseplanenComponent, 
     LaeringsmaalComponent,
-  ]; // tells the dynamic hook which component could possibly be rendered
-  timer : number = 15; // timer between each slide in seconds
+    WeatherComponent,
+  ]; 
+  timer : number = import.meta.env.NG_APP_SLIDE_TIMER; // timer between each slide in seconds
 
   constructor(private slidesService: SlidesService) {}
 

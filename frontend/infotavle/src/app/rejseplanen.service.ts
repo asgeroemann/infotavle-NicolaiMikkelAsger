@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { inject } from '@angular/core';
-import { Departures } from './interfaces/departures';
+import { Departures } from './interfaces/rejseplanen/departures';
 
 @Injectable({
   providedIn: 'root'
@@ -25,5 +25,4 @@ export class RejseplanenService {
     this.url = `http://${this.baseUrl}/nearbyDepartureBoard?accessId=${this.key}&${this.lon}&${this.lat}&${duration}&${maxJourneys}&format=json`;
     return this.http.get<Departures>(this.url);
   }
-
 }

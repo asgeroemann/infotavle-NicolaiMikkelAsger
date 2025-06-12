@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SlidesService {
   slides : string[] = [];
-  testSlides : string[] = ["<app-laeringsmaal></app-laeringsmaal>", "<app-rejseplanen></app-rejseplanen>"];
+  testSlides : string[] = ["<app-laeringsmaal></app-laeringsmaal>", "<app-weather></app-weather>", "<app-rejseplanen></app-rejseplanen>"];
 
   constructor() { }
 

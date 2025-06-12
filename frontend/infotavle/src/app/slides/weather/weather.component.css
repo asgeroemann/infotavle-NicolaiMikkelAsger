@@ -1,0 +1,24 @@
+.slide {
+    height: 100%;
+    width: inherit;
+    text-align: center;
+    padding-top: 20px;
+    background: #271478;
+background: linear-gradient(90deg,rgba(39, 20, 120, 1) 0%, rgba(65, 187, 209, 1) 35%, rgba(255, 248, 43, 1) 100%);
+}
+
+.forecasts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+app-forecast {
+    width: 45%;
+    height: 40%;
+}

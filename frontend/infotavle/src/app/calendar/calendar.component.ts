@@ -9,12 +9,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './calendar.component.css'
 })
 export class CalendarComponent implements OnInit {
+  testHoliday : string[] = ["", "2. Påskedag", "", "", "", "Kristihimmelfart", "", "", "", "Grundlovsdag"];
+  testEvent : string[] = ["Fri", "Fri", "", "Idræt", "", "Fri", "", "", "Idræt", "Fri"];
+
   dates : Date[] = [];
   constructor() {
   }
 
   ngOnInit(): void {
-    // get the next 14 dates and append them if they are not weekends, to get the next 10 weekdays
+    // get the next 14 dates and add them if they are not weekends, to get the next 10 weekdays
     for (var i = 0; i < 14; i++) {
       var date = new Date();
       date.setDate(date.getDate() + i);

@@ -4,6 +4,9 @@ declare interface Env {
   // Replace the following with your own environment variables.
   // Example: NGX_VERSION: string;
   readonly NG_APP_REJSEPLANEN_KEY: string;
+  readonly NG_APP_DMI_KEY: string;
+  readonly NG_APP_OPENWEATHERMAP_KEY: string;
+  readonly NG_APP_SLIDE_TIMER: number;
 }
 
 // Choose how to access the environment variables.

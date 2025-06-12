@@ -1,0 +1,22 @@
+.forecast-div {
+    height: 100%;
+    font-size: 4vw;
+    border-radius: 30px;
+    background: #3ab32f;
+    padding-top: 10px;
+}
+
+.time {
+
+}
+
+img {
+    position: relative;
+    top: -3vh;
+    height: 15vh;
+}
+
+.temp {
+    position: relative;
+    top: -6vh;
+}

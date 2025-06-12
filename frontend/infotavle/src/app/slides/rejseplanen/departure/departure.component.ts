@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Departure } from '../../../interfaces/departure';
+import { Departure } from '../../../interfaces/rejseplanen/departure';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -9,4 +9,6 @@ import { CommonModule } from '@angular/common';
 })
 export class DayComponent {
   @Input() date!: Date;
+  @Input() holiday!: string;
+  @Input() event!: string;
 }

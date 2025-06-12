@@ -1,0 +1,5 @@
+<div class="forecast-div">
+    <p class="time">kl. {{(forecast.dt % 86400) / 3600}}</p>
+    <img src="https://openweathermap.org/img/wn/{{forecast.weather[0].icon}}@4x.png" alt="weather icon">
+    <p class="temp">{{round(forecast.main.temp)}}&deg;C</p>
+</div>
