@@ -22,9 +22,11 @@ export class BaseComponent implements OnInit {
     LaeringsmaalComponent,
     WeatherComponent,
   ]; 
-  timer : number = import.meta.env.NG_APP_SLIDE_TIMER; // timer between each slide in seconds
+  timer : number; // timer between each slide in seconds
 
-  constructor(private slidesService: SlidesService) {}
+  constructor(private slidesService: SlidesService) {
+    this.timer = this.slidesService.slideTimer;
+  }
 
   ngOnInit(): void {
     setInterval(() => { 
