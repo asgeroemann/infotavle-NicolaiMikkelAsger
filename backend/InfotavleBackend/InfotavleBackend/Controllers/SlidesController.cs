@@ -26,7 +26,21 @@ namespace InfotavleBackend.Controllers
         [HttpGet("active")]
         public async Task<List<Slides>> GetActive()
         {
-            return await theDBContext.slides.Where(x => x.isActive == true).ToListAsync();
+            var theCurrentActiveSlides = await theDBContext.slides.Where(x => x.isActive == true).ToListAsync();
+            DateTime currentDate = DateTime.Now.Date;
+            bool needDBUpdate = false;
+            foreach (var aSlide in theCurrentActiveSlides) {
+                if (aSlide.expirationDate.HasValue) {
+                    if (currentDate.CompareTo(aSlide.expirationDate.Value.Date) > 0) {
+                        aSlide.isActive = false;
+                        theDBContext.slides.Update(aSlide);
+                    }
+                }
+            }
+            if (needDBUpdate) {
+                await theDBContext.SaveChangesAsync();
+            }
+            return theCurrentActiveSlides.Where(x => x.isActive).ToList();
         }
     }
 }
