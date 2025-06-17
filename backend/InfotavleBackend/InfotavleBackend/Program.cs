@@ -1,4 +1,6 @@
 
+using InfotavleBackend.Repositories.Implementation;
+using InfotavleBackend.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace InfotavleBackend
@@ -20,6 +22,8 @@ namespace InfotavleBackend
                 options.UseSqlServer("name=DefaultConnection"));
 
             builder.Services.AddResponseCaching();
+
+            builder.Services.AddScoped<IGetTheCalendarEvents, GetTheCalendarEvents>();
 
             var app = builder.Build();
 
