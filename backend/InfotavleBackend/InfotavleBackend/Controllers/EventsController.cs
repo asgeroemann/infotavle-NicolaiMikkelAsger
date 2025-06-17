@@ -6,6 +6,7 @@ namespace InfotavleBackend.Controllers
 {
     [Route("api/events")]
     [ApiController]
+    [ResponseCache(Duration = 30)]
     public class EventsController: ControllerBase
     {
         private readonly AppDBContext theDBContext;

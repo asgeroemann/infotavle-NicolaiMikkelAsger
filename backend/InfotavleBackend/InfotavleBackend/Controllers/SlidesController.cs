@@ -6,6 +6,7 @@ namespace InfotavleBackend.Controllers
 {
     [Route("api/slides")]
     [ApiController]
+    [ResponseCache(Duration = 30)]
     public class SlidesController: ControllerBase
     {
         private readonly AppDBContext theDBContext;
@@ -34,6 +35,7 @@ namespace InfotavleBackend.Controllers
                     if (currentDate.CompareTo(aSlide.expirationDate.Value.Date) > 0) {
                         aSlide.isActive = false;
                         theDBContext.slides.Update(aSlide);
+                        needDBUpdate = true;
                     }
                 }
             }

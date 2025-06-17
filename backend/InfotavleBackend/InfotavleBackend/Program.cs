@@ -19,6 +19,8 @@ namespace InfotavleBackend
             builder.Services.AddDbContext<AppDBContext>(options =>
                 options.UseSqlServer("name=DefaultConnection"));
 
+            builder.Services.AddResponseCaching();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,6 +30,9 @@ namespace InfotavleBackend
                 app.UseSwaggerUI();
             }
 
+            // Atempting to implement https
+            app.UseHttpsRedirection();
+
             // ---***--- Dissabels all security ---***---
             app.UseCors(options =>
             {
@@ -35,6 +40,8 @@ namespace InfotavleBackend
                 options.AllowAnyOrigin();
                 options.AllowAnyMethod();
             });
+
+            app.UseResponseCaching();
 
             app.UseAuthorization();
 
