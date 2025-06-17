@@ -3,8 +3,8 @@
         <p class="date">{{date | date:'E MMM d'}}</p>
         <p class="holiday">{{holiday}}</p>
     </div>
-    <!-- <p class="event" *ngFor="let event of todaysEvents">{{event.theMessage}}</p> -->
-    <div class="event" *ngFor="let event of todaysEvents">
+    <p class="event" *ngFor="let event of todaysEvents">{{event.theMessage}}</p>
+    <!-- <div class="event" *ngFor="let event of todaysEvents">
         <p *ngIf="date===event.date">{{event.theMessage}}</p>
-    </div>
+    </div> -->
 </div>

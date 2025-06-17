@@ -23,9 +23,14 @@ export class DayComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.todaysEvents = this.eventsService.getEventsByDate(this.date);
-    console.log(this.date.toISOString());
-    this.holiday = this.eventsService.maerkeDag(this.date);
+    this.eventsService.getEventsByDate(this.date).then((todaysEvents:Array<any>)=>{
+      this.todaysEvents = todaysEvents
+    });
+    //console.log(this.todaysEvents);
+    //console.log(this.date.toISOString());
+    this.eventsService.maerkeDag(this.date).then((maerke)=>{
+      this.holiday = maerke
+    });
   }
 
 }

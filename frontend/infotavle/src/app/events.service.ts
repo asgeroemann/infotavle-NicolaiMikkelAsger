@@ -11,13 +11,13 @@ export class EventsService {
 
   maerkedage: object = {};
 
-  test = [{"eventID":1,"theDate":"2025-06-04T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":1,"theDate":"2025-06-11T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":2,"theDate":"2025-06-05T00:00:00","theMessage":"Fri (Grundlovsdag)","slideID":null},{"eventID":6,"theDate":"2025-06-06T00:00:00","theMessage":"Fri","slideID":null},{"eventID":3,"theDate":"2025-05-27T00:00:00","theMessage":"På tur","slideID":4},{"eventID":4,"theDate":"2025-05-27T00:00:00","theMessage":"Facility info","slideID":2},{"eventID":4,"theDate":"2025-06-27T00:00:00","theMessage":"Facility info","slideID":2}];
+  test =[{"eventID":1,"theDate":"2025-06-04T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":1,"theDate":"2025-06-11T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":2,"theDate":"2025-06-05T00:00:00","theMessage":"Fri (Grundlovsdag)","slideID":null},{"eventID":6,"theDate":"2025-06-06T00:00:00","theMessage":"Fri","slideID":null},{"eventID":3,"theDate":"2025-05-27T00:00:00","theMessage":"På tur","slideID":4},{"eventID":4,"theDate":"2025-05-27T00:00:00","theMessage":"Facility info","slideID":2},{"eventID":4,"theDate":"2025-06-27T00:00:00","theMessage":"Facility info","slideID":2}];
   testMaerkedage = [{"date":"2025-06-23","name":"Sankt Hans aften","nationalHoliday":false},{"date":"2025-06-24","name":"Sankt Hans dag","nationalHoliday":false}];
 
   constructor() {
     //this.events=
     this.events=/*this.test; */this.fetchEvents();
-    this.maerkedage = this.testMaerkedage//  this.fetchMaerkedage();
+    this.maerkedage = /*this.testMaerkedage//*/  this.fetchMaerkedage();
    }
 
    async fetchEvents() : Promise<object>{
@@ -43,7 +43,7 @@ export class EventsService {
       const data = await response.json();
       console.log("teststdrds");
       console.log(data); 
-    return await data.json() ?? [];
+    return await data ?? [];
    }
 
 
@@ -70,11 +70,14 @@ export class EventsService {
     return this.events;
    }
    
-   getEventsByDate(date:Date) : Array<any>  {
+   async getEventsByDate(date:Date) : Promise<Array<any>>  {
     console.log(this.events);
-    var filter = (this.events as Array<any>).filter(e =>
-      this.dateEqual(date, new Date(e.theDate))
-    )
+    var filter : Promise<Array<any>>;
+
+    filter = (this.events as Promise<Array<any>>).then((events2) => {
+      return events2.filter(e =>
+      this.dateEqual(date, new Date(e.theDate)))
+    })
     return filter;
    }
 
@@ -83,16 +86,19 @@ export class EventsService {
     return (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate());
    }
 
-   maerkeDag (date:Date) : string {
-    var filter = (this.maerkedage as Array<any>).filter(e =>
-      this.dateEqual(date, new Date(e.date))
-    )
-    console.log(filter);
-    if (filter.length > 0){ 
-      console.log(filter[0].name);
-      return filter[0].name;
+   async maerkeDag (date:Date) : Promise<string> {
+
+    var filter = (this.maerkedage as Promise<Array<any>>).then((m) => {
+      return m.filter(e =>
+      this.dateEqual(date, new Date(e.date)))
     }
-    return "";
+    )
+    //console.log(filter);
+
+    return filter.then((m) => {
+      if (m.length > 0) return m[0].name;
+      return "";
+    })
    }
 
 }
