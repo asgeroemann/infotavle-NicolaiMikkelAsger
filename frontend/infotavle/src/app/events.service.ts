@@ -6,18 +6,17 @@ import { Injectable } from '@angular/core';
 })
 export class EventsService {
   url = 'http://localhost:5115/api/events';
+  sallingToken : string = import.meta.env.NG_APP_SALLING_KEY;
 
-  events: object = {}; // Array<any> = [];
-
+  events: object = {};
   maerkedage: object = {};
 
   test =[{"eventID":1,"theDate":"2025-06-04T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":1,"theDate":"2025-06-11T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":2,"theDate":"2025-06-05T00:00:00","theMessage":"Fri (Grundlovsdag)","slideID":null},{"eventID":6,"theDate":"2025-06-06T00:00:00","theMessage":"Fri","slideID":null},{"eventID":3,"theDate":"2025-05-27T00:00:00","theMessage":"På tur","slideID":4},{"eventID":4,"theDate":"2025-05-27T00:00:00","theMessage":"Facility info","slideID":2},{"eventID":4,"theDate":"2025-06-27T00:00:00","theMessage":"Facility info","slideID":2}];
   testMaerkedage = [{"date":"2025-06-23","name":"Sankt Hans aften","nationalHoliday":false},{"date":"2025-06-24","name":"Sankt Hans dag","nationalHoliday":false}];
 
   constructor() {
-    //this.events=
-    this.events=/*this.test; */this.fetchEvents();
-    this.maerkedage = /*this.testMaerkedage//*/  this.fetchMaerkedage();
+    this.events=this.fetchEvents();
+    this.maerkedage =this.fetchMaerkedage();
    }
 
    async fetchEvents() : Promise<object>{
@@ -29,7 +28,6 @@ export class EventsService {
 
    async fetchMaerkedage() : Promise<Array<any>>{
     //Fjern inden commit
-    const token = "Bearer ce6d0fcf-9a9d-4124-8fc5-d6e9c8744b9b";
     var dato = new Date();
     dato.setDate(dato.getDate() + 14);
     const response = await fetch(
@@ -37,7 +35,7 @@ export class EventsService {
       + dato.toISOString().slice(0, 10), {
         headers: {
         //credentials: "include" ,
-          "Authorization": token,
+          "Authorization": this.sallingToken,
         }
       });
       const data = await response.json();
@@ -46,25 +44,6 @@ export class EventsService {
     return await data ?? [];
    }
 
-
-  //  async fetchMaerkedage() : Promise<Array<any>>{ //Variant med Salling-SDK
-  //   //Fjern inden commit
-
-  //   var dato = new Date();
-  //   dato.setDate(dato.getDate() + 14);
-
-  //   const Holidays = require('@salling-group/holidays');
-  //   const instance = new Holidays({
-  //   'applicationName': 'My Application v1.0.0',
-  //   'auth': {
-  //   'type': 'bearer',
-  //   'token': 'my_token',
-  //   },
-  //   });
-
-  //   return instance.holidaysUntil(dato)
-
-  //  }
 
    getEvents() : object {
     return this.events;

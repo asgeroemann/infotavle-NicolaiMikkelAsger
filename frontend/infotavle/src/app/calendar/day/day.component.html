@@ -3,7 +3,9 @@
         <p class="date">{{date | date:'E MMM d'}}</p>
         <p class="holiday">{{holiday}}</p>
     </div>
-    <p class="event" *ngFor="let event of todaysEvents">{{event.theMessage}}</p>
+    <p class="event" *ngFor="let event of todaysEvents">{{event.theMessage}} 
+        <!-- <div *ngIf="event.Slide"><a href="{{slides[event.Slide].componentName}}"></a></div> -->
+    </p>
     <!-- <div class="event" *ngFor="let event of todaysEvents">
         <p *ngIf="date===event.date">{{event.theMessage}}</p>
     </div> -->

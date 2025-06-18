@@ -7,6 +7,7 @@ declare interface Env {
   readonly NG_APP_DMI_KEY: string;
   readonly NG_APP_OPENWEATHERMAP_KEY: string;
   readonly NG_APP_SLIDE_TIMER: number;
+  readonly NG_APP_SALLING_KEY: string;
 }
 
 // Choose how to access the environment variables.

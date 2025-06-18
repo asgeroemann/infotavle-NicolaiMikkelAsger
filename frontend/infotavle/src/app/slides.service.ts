@@ -7,6 +7,7 @@ import { ConfigService } from './config.service';
 export class SlidesService {
   slides : string[] = [];
   testSlides : string[] = ["<app-laeringsmaal></app-laeringsmaal>", "<app-weather></app-weather>", "<app-rejseplanen></app-rejseplanen>"];
+  slidesURL : string = "http://localhost:5115/api/slides/active";
   slideTimer : number;
 
   constructor(private configService : ConfigService) {
@@ -15,6 +16,16 @@ export class SlidesService {
 
   //fetch the slides we want to show from the backend and forward them
   getSlides() : string[] {
+    fetch(this.slidesURL).then((response) => {
+      response.json().then((data) => {
+        this.slides = [];
+        data.forEach((element: { componentName: string; }) => {
+          this.slides.push(`<${element.componentName}></${element.componentName}>`);
+        });
+      });
+
+    })
+    console.log(this.slides);
     return this.slides;
   }
 
