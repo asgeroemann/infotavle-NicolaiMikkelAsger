@@ -7,7 +7,7 @@ import { ConfigService } from './config.service';
 export class SlidesService {
   slides : string[] = [];
   testSlides : string[] = ["<app-laeringsmaal></app-laeringsmaal>", "<app-weather></app-weather>", "<app-rejseplanen></app-rejseplanen>"];
-  slidesURL : string = "http://localhost:5115/api/slides/active";
+  slidesURL : string = "http://10.0.1.225:5115/api/slides/active";
   slideTimer : number;
 
   constructor(private configService : ConfigService) {

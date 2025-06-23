@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EventsService {
-  url = 'http://localhost:5115/api/events';
+  url = 'http://10.0.1.225:5115/api/events';
   sallingToken : string = import.meta.env.NG_APP_SALLING_KEY;
 
   events: object = {};
@@ -31,7 +31,7 @@ export class EventsService {
     var dato = new Date();
     dato.setDate(dato.getDate() + 14);
     const response = await fetch(
-      "https://api.sallinggroup.com/v1/holidays?endDate="
+      "https://api.sallinggroup.com/v1/holidays" + new Date().toISOString().slice(0,10) + "?endDate="
       + dato.toISOString().slice(0, 10), {
         headers: {
         //credentials: "include" ,
