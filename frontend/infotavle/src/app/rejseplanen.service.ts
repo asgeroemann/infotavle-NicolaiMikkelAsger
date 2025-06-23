@@ -3,20 +3,26 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { inject } from '@angular/core';
 import { Departures } from './interfaces/rejseplanen/departures';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RejseplanenService {
-  private baseUrl = 'rejseplanen.dk/api';
-  private lon = 'originCoordLong=12.458394';
-  private lat = 'originCoordLat=55.613850';
-  private key = import.meta.env.NG_APP_REJSEPLANEN_KEY;
+  private baseUrl;
+  private lon;
+  private lat;
+  private key;
   private url = '';
   private http = inject(HttpClient);
 
+  constructor(private configService : ConfigService) {
+    this.baseUrl = 'rejseplanen.dk/api'
+    this.lat = 'originCoordLat=' + this.configService.config.lat;
+    this.lon = 'originCoordLong=' + this.configService.config.lon;
+    this.key = import.meta.env.NG_APP_REJSEPLANEN_KEY;
+   }
 
-  constructor() { }
 
   //pulls departures from the rejseplanen api and forwards the data
   getDepartures() : Observable<Departures> {

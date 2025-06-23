@@ -22,14 +22,16 @@ export class BaseComponent implements OnInit {
     LaeringsmaalComponent,
     WeatherComponent,
   ]; 
-  timer : number = import.meta.env.NG_APP_SLIDE_TIMER; // timer between each slide in seconds
+  timer : number; // timer between each slide in seconds
 
-  constructor(private slidesService: SlidesService) {}
+  constructor(private slidesService: SlidesService) {
+    this.timer = this.slidesService.slideTimer;
+  }
 
   ngOnInit(): void {
     setInterval(() => { 
       if (this.i >= this.len-1) { // if we have looped through the entire slides array then repull and start from the start
-        this.slides = this.slidesService.getTestSlides();
+        this.slides = this.slidesService.getSlides();
         this.len = this.slides.length;
         this.i = 0;
       }

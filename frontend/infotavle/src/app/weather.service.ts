@@ -3,20 +3,26 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { inject } from '@angular/core';
 import { Forecasts } from './interfaces/weather/forecasts';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
-  private baseUrl = 'api.openweathermap.org/data/2.5/forecast';
-  private lon = 'lon=12.458394';
-  private lat = 'lat=55.613850';
-  private units = 'units=metric';
+  private baseUrl;
+  private lon;
+  private lat;
+  private units;
   private key = import.meta.env.NG_APP_OPENWEATHERMAP_KEY;
   private url = '';
   private http = inject(HttpClient);
 
-  constructor() { }
+  constructor(private configService : ConfigService) {
+    this.baseUrl = 'api.openweathermap.org/data/2.5/forecast';
+    this.lon = 'lon=' + this.configService.config.lon;
+    this.lat = 'lat=' + this.configService.config.lat;
+    this.units = 'units=metric'
+  }
 
   //pulls departures from the openweathermap api and forwards the data
   getforecasts() : Observable<Forecasts> {

@@ -9,9 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './calendar.component.css'
 })
 export class CalendarComponent implements OnInit {
-  testHoliday : string[] = ["", "2. Påskedag", "", "", "", "Kristihimmelfart", "", "", "", "Grundlovsdag"];
-  testEvent : string[] = ["Fri", "Fri", "", "Idræt", "", "Fri", "", "", "Idræt", "Fri"];
-
   dates : Date[] = [];
   constructor() {
   }
