@@ -31,7 +31,7 @@ export class EventsService {
     var dato = new Date();
     dato.setDate(dato.getDate() + 14);
     const response = await fetch(
-      "https://api.sallinggroup.com/v1/holiday?startDate=" 
+      "https://api.sallinggroup.com/v1/holidays?startDate=" 
       + new Date().toISOString().slice(0,10) 
       + "&endDate="
       + dato.toISOString().slice(0, 10), {
