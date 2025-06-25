@@ -1,5 +1,7 @@
 {
     "slideTimer": 15,
     "lat": 55.613850,
-    "lon": 12.458394
+    "lon": 12.458394,
+    "urlConnectorToBackend": "http://10.0.1.225:5115",
+    "daysInCalendar": 7
 }

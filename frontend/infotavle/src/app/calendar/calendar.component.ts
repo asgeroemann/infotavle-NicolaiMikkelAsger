@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DayComponent } from './day/day.component';
 import { CommonModule } from '@angular/common';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-calendar',
@@ -10,12 +11,14 @@ import { CommonModule } from '@angular/common';
 })
 export class CalendarComponent implements OnInit {
   dates : Date[] = [];
-  constructor() {
+  theNumberOfDays : number;
+  constructor(private configService : ConfigService) {
+    this.theNumberOfDays = this.configService.config.daysInCalendar;
   }
 
   ngOnInit(): void {
     // get the next 14 dates and add them if they are not weekends, to get the next 10 weekdays
-    for (var i = 0; i < 14; i++) {
+    for (var i = 0; i < this.theNumberOfDays; i++) {
       var date = new Date();
       date.setDate(date.getDate() + i);
       if (this.weekendFilter(date)) {

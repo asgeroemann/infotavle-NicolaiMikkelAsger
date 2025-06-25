@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
+import { ConfigService } from './config.service';
 // import {Holidays } from '@salling-group/holidays';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventsService {
-  url = 'http://10.0.1.225:5115/api/events';
+  url : string;
   sallingToken : string = import.meta.env.NG_APP_SALLING_KEY;
+
+  theNumberOfDaysInCalendar: number;
 
   events: object = {};
   maerkedage: object = {};
@@ -14,7 +17,9 @@ export class EventsService {
   test =[{"eventID":1,"theDate":"2025-06-04T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":1,"theDate":"2025-06-11T00:00:00","theMessage":"Idræt","slideID":null},{"eventID":2,"theDate":"2025-06-05T00:00:00","theMessage":"Fri (Grundlovsdag)","slideID":null},{"eventID":6,"theDate":"2025-06-06T00:00:00","theMessage":"Fri","slideID":null},{"eventID":3,"theDate":"2025-05-27T00:00:00","theMessage":"På tur","slideID":4},{"eventID":4,"theDate":"2025-05-27T00:00:00","theMessage":"Facility info","slideID":2},{"eventID":4,"theDate":"2025-06-27T00:00:00","theMessage":"Facility info","slideID":2}];
   testMaerkedage = [{"date":"2025-06-23","name":"Sankt Hans aften","nationalHoliday":false},{"date":"2025-06-24","name":"Sankt Hans dag","nationalHoliday":false}];
 
-  constructor() {
+  constructor(private configService : ConfigService) {
+    this.url = `${this.configService.config.urlConnectorToBackend}/api/events`;
+    this.theNumberOfDaysInCalendar = this.configService.config.daysInCalendar;
     this.events=this.fetchEvents();
     this.maerkedage =this.fetchMaerkedage();
    }
@@ -29,7 +34,7 @@ export class EventsService {
    async fetchMaerkedage() : Promise<Array<any>>{
     //Fjern inden commit
     var dato = new Date();
-    dato.setDate(dato.getDate() + 14);
+    dato.setDate(dato.getDate() + this.theNumberOfDaysInCalendar);
     const response = await fetch(
       "https://api.sallinggroup.com/v1/holidays?startDate=" 
       + new Date().toISOString().slice(0,10) 

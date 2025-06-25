@@ -7,11 +7,12 @@ import { ConfigService } from './config.service';
 export class SlidesService {
   slides : string[] = [];
   testSlides : string[] = ["<app-laeringsmaal></app-laeringsmaal>", "<app-weather></app-weather>", "<app-rejseplanen></app-rejseplanen>"];
-  slidesURL : string = "http://10.0.1.225:5115/api/slides/active";
+  slidesURL : string;
   slideTimer : number;
 
   constructor(private configService : ConfigService) {
     this.slideTimer = this.configService.config.slideTimer;
+    this.slidesURL = `${this.configService.config.urlConnectorToBackend}/api/slides/active`;
    }
 
   //fetch the slides we want to show from the backend and forward them
