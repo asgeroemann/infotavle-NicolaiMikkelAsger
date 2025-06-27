@@ -28,11 +28,11 @@ export class EventsService {
 
    async fetchMaerkedage() : Promise<Array<any>>{
     //Fjern inden commit
-    var dato = new Date("2025-06-22");
+    var dato = new Date();
     dato.setDate(dato.getDate() + 14);
     const response = await fetch(
       "https://api.sallinggroup.com/v1/holidays?startDate=" 
-      + new Date("2025-06-22").toISOString().slice(0,10) 
+      + new Date().toISOString().slice(0,10) 
       + "&endDate="
       + dato.toISOString().slice(0, 10), {
         headers: {

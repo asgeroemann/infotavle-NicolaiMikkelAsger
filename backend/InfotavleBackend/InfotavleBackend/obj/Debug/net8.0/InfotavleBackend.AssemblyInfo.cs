@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+490918239f049db901a581040bd1ad266d22fdeb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4ef4f696babd8ad4ed5e72956652a3384ddab84")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InfotavleBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

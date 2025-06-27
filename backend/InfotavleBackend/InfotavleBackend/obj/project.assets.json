@@ -5157,23 +5157,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MIK\\.nuget\\packages\\": {},
+    "C:\\Users\\nin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\InfotavleBackend.csproj",
+      "projectUniqueName": "C:\\Users\\nin\\Documents\\p2\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\InfotavleBackend.csproj",
       "projectName": "InfotavleBackend",
-      "projectPath": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\InfotavleBackend.csproj",
-      "packagesPath": "C:\\Users\\MIK\\.nuget\\packages\\",
-      "outputPath": "H:\\P2\\Informationstavle\\Codespace\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\obj\\",
+      "projectPath": "C:\\Users\\nin\\Documents\\p2\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\InfotavleBackend.csproj",
+      "packagesPath": "C:\\Users\\nin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nin\\Documents\\p2\\infotavle\\backend\\InfotavleBackend\\InfotavleBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MIK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5201,7 +5201,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -5241,7 +5241,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
